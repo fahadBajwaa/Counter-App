@@ -1,6 +1,9 @@
 import { Injectable, signal } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
 
+@Injectable({
+  providedIn: 'root', 
+})
 export class CounterService {
   private _counterSubject = new BehaviorSubject<number>(0);
   counter$ = this._counterSubject.asObservable(); // Observable
