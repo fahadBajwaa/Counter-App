@@ -1,0 +1,25 @@
+-------------------------- 🟢  Explanation of Key Concepts: 🟢 -----------------------------------------
+
+Classes: 🟥
+
+a class is a blueprint for creating objects with specific properties and methods.
+"DisplayComponent" is a class that defines the structure and behavior of the display component.
+
+
+Scope: 🟥
+
+Variables like "counterValue" and "behaviorSubjectValue" are scoped to the DisplayComponent class.
+They are accessible throughout the class and can be used in the component's template for data binding.
+
+
+Lifecycle Hooks: 🟥
+
+ngOnInit: Invoked once after the component's initialization. Suitable for setting up the component, such as subscribing to observables.
+ngOnDestroy: Invoked just before the component is destroyed. Ideal for cleaning up resources, like unsubscribing from observables to prevent memory leaks.
+
+
+Initialization at the Top: 🟥
+
+Initializing variables at the top of the class provides clear default values and improves code readability.
+It's a common practice to set default values during declaration unless the initialization depends on some logic or injected services.
+

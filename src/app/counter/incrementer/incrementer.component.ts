@@ -13,4 +13,9 @@ export class IncrementerComponent {
   increase() {
     this._counterService.increment();
   }
+
+  ngOnInit(): void {
+    // Subscribing will execute the emission logic
+    this._counterService.obs$.subscribe(val => console.log(val + 'Incrementer Component'));
+  }
 }
